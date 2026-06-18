@@ -1,4 +1,4 @@
-# Simple Portfolio Website
+# My Portfolio Website
 
 This is a clean static portfolio website built with:
 
