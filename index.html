@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simple personal portfolio website built with HTML, CSS and JavaScript." />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo"><span>Ampfarisaho</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Software Analyst</p>
+        <h1>Business Analysis and
+            Artificial Intelligence (AI)</h1>
+        <p class="hero-text">
+          Informatics, with a strong foundation:
+          Business Analysis.
+          Database Management.
+          Systems Analysis.
+          IT Project Management.
+          Artificial Intelligence (AI)
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <img src="assets/images/profile.jpeg" alt="Portfolio profile photo" />
+      </div>
+    </section>
+
+    
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill reveal">
+          <span>HTML</span>
+          <div class="bar"><i style="width: 90%"></i></div>
+        </div>
+        <div class="skill reveal">
+          <span>CSS</span>
+          <div class="bar"><i style="width: 85%"></i></div>
+        </div>
+        <div class="skill reveal">
+          <span>JavaScript</span>
+          <div class="bar"><i style="width: 75%"></i></div>
+        </div>
+        <div class="skill reveal">
+          <span>Responsive Design</span>
+          <div class="bar"><i style="width: 80%"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>My Github Projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-number">01</div>
+          <h3>Ai Education Path</h3>
+          <p>AI-driven platform guiding learners on career paths & secure jobs.</p>
+          <a href="https://proedupath.com/" class="project-link">View Project</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">02</div>
+          <h3>CRM</h3>
+          <p>All-in-one CRM, ERP & marketplace for SMMEs.</p>
+          <a href="https://teksacrm.lovable.app/" class="project-link">View Project</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-number">03</div>
+          <h3>🍔 Moja Flava Fast Food</h3>
+          <p>SME engagement platform.</p>
+          <a href="#" class="project-link">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section github" id="github">
+      <div class="github-box reveal">
+        <img src="assets/images/github.jpg" alt="GitHub logo" />
+        <div>
+          <p class="eyebrow">GitHub</p>
+          <h2>Explore My Codes</h2>
+          <p>
+            To see all my projects.
+          </p>
+          <a href="https://github.com/Ampfcandice33" target="" rel="noopener" class="btn primary">Open GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Get In Touch</h2>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm">
+          <label>
+            Name
+            <input type="text" id="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </label>
+
+          <label>
+            Message
+            <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+          </label>
+
+          <button type="submit" class="btn primary">Send Message</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+
+        <div class="contact-card reveal">
+          <h3>Contact Details</h3>
+          <p><strong>Email:</strong> yourname@email.com</p>
+          <p><strong>Location:</strong> South Africa</p>
+          <p><strong>Availability:</strong> Open to opportunities and collaborations.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
